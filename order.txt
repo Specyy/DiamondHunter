@@ -1,0 +1,65 @@
+TODO
+ - Create the game thread and find a nice-working game loop (a game loop that doesn't slow down your pc, but still lets
+   you get the best frames).
+ - Create the display (window and window panel (also, choose whether you should use a JPanel or a Canvas (do research if
+   needed)))
+ - Implement an input system
+ - Create the State system
+ - Create a vector-based positioning system (remember to add a distancesq method (also check java's Point2D class for more
+   ideas))
+ - Implement an AABB collision system (remember to add a distancesq method (also check java's Point2D class for more
+   ideas))
+ - Create the sprite system
+ - Create the entity system
+ - Start thinking about how to create a Tiled Map (TMX or XML) parser
+ - Create an ImageFont class
+ - Find some good fonts for game
+ - Create the player (remember to add acceleration and deceleration)
+ - Create a collision system
+ - Test the collision system
+ - Create an Animation class
+ - Create an Entity Manager
+ - Create and finis the movement direction class
+ - Create pixel art for menu state
+ - Create the menu state (and finish it)
+ - Create a Tiled Map using the 'Tiled' application
+ - Create the Tiled Map parser
+ - Render the Tiled Map
+ - Find a way to parse object from the Tiled Map
+ - Test Collision on the Tiled Map
+ - Test diamond pickup on the Tiled Map
+ - Test item pickup on the Tiled Map
+ - Create the inventory system (not necessarily a GUI but just something the player can swap through)
+ - Display picked up items in inventory
+ - Test item breaking (test if you can break tress or something)
+ - Test item swapping (see if you can't breaks certain objects with certain items)
+
+[Menu]
+ - A parallax background with an image that is a map (not necessarily of the game but it just has to have the same
+   spritesheet)
+ - There will be a statistics page that shows your best rank, your best time, your latest rank and your latest time
+ - A template for the container of the statistics page
+ - A play button
+ - A quit button
+
+[Game]
+ - You are a human who has to collect diamonds to win
+ - You get a better rank if you collect diamonds in a certain amount of time
+ - There is a "ruby" (doesn't have to be a ruby it just has to be the best gem you can get) that the player can find if
+   they collect all the diamonds in a certain amount of time and press some key and by collecting this diamond, they
+   receive the best rank they can get.
+ - The player must collect items (e.g. an axe) to be able to collect all the diamonds
+ - The player must have a certain amount of diamonds to be able to collect some items
+ - The player must use items to break down certain objects (exp: breakable trees, pieces of stone, or wooden walls)
+   to be able to collect certain diamonds.
+ - The player can swap through items in their inventory and choose which one they want to use
+
+[To Come]
+- A path-finding system
+- A map editor
+- Plugins (not likely)
+
+[Code]
+- For the animation system, if you make a 2D array, let the user be able to specify where it starts and where it ends
+- For the TileMap system, if you create your own, take a look at: https://doc.mapeditor.org/en/stable/reference/tmx-map-format/
+- For the TileMap parser, if you create your own, take a look at: https://github.com/leonardo-ono/Java2DElevatorActionGame/blob/master/JavaElevatorAction/src/br/ol/ge/map/TMXParser.java
